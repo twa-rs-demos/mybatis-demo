@@ -1,12 +1,9 @@
 # mybatis-demo
 
 ## 配置环境
-###1. 安装 Gradle　
-   **Ubuntu 16.4：** 具体参考[这里](http://www.jianshu.com/p/6c3a5d071c64) 或者[官网安装](https://gradle.org/gradle-download/)　
-   **Mac:** 执行 ./gradlew　
-   **Windows:** gradlew.bat　
-###2. 安装 MySQL 　
+### 安装 MySQL 　
 `sudo apt install mysql-server`，具体可以参考 [这里](https://help.ubuntu.com/16.04/serverguide/mysql.html)　
+> `注意：` 请记住 mysql 的 root 密码
 
 ## 初始化数据库
 1. [~] $: cd mybatis-demo
@@ -25,8 +22,7 @@ id name   gender
 
 ##  运行 demo
 1. [~] $: cd mybatis-demo
-2. [mybatis-demo] $: gradle build
-3. [mybatis-demo] $: gradle -q run
+2. [mybatis-demo] $: ./gradlew -q run
 
 此时，在控制台下应该可以看到类似如下的输出：  
 ```shell
@@ -36,5 +32,5 @@ User{id=2, name='Vegeta', gender='male'}
 User{id=3, name='ChiChi', gender='female'}
 User{id=4, name='Goku', gender='male'}
 ```
-
+> `注意：`第一次运行 ./gradlew -q run，项目会下载安装 `gradle`，花费比较长的时间
 
