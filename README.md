@@ -1,9 +1,11 @@
 # mybatis-demo
 
-## 配置环境 
-1. 安装 Gradle `sudo apt install gradle`
+## 配置环境
+1. 安装 Gradle
+   ** Ubuntu 16.4：** 具体参考[这里](http://www.jianshu.com/p/6c3a5d071c64) 或者[官网安装](https://gradle.org/gradle-download/)
+   ** Mac:** 执行 ./gradlew
+   ** Windows:** gradlew.bat
 2. 安装 MySQL `sudo apt install mysql-server`，具体可以参考 [这里](https://help.ubuntu.com/16.04/serverguide/mysql.html)
-    
 
 ## 初始化数据库
 1. [~] $: cd mybatis-demo
